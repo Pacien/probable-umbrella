@@ -1,0 +1,14 @@
+Executable : /opt/android-sdk-linux/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Android.mk
+NDK_APPLICATION_MK=/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Application.mk
+APP_ABI=armeabi-v7a
+NDK_ALL_ABIS=armeabi-v7a
+NDEBUG=0
+APP_PLATFORM=android-9
+NDK_OUT=/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/ndkBuild/release/obj
+NDK_LIBS_OUT=/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/ndkBuild/release/lib
+-n
+jvmArgs : 
+

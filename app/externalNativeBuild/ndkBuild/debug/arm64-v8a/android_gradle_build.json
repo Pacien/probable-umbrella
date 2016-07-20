@@ -1,0 +1,30 @@
+{
+  "buildFiles": [
+    "/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Android.mk",
+    "/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Application.mk"
+  ],
+  "libraries": {
+    "hello-jni-debug-arm64-v8a": {
+      "buildCommand": "/opt/android-sdk-linux/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Android.mk NDK_APPLICATION_MK\u003d/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/ndkBuild/debug/lib hello-jni",
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "hello-jni",
+      "files": [
+        {
+          "src": "/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/hello-jni.c",
+          "flags": "\"-MP\" \"-gcc-toolchain\" \"/opt/android-sdk-linux/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64\" \"-target\" \"aarch64-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fpic\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O2\" \"-DNDEBUG\" \"-I/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-isystem\" \"/opt/android-sdk-linux/ndk-bundle/platforms/android-21/arch-arm64/usr/include\""
+        }
+      ],
+      "output": "/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libhello-jni.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cCompilerExecutable": "/opt/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

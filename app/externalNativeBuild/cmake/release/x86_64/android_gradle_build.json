@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/opt/android-sdk-linux/cmake/3.6/bin/cmake --build /home/pacien/code/android-ndk/hello-jni/app/externalNativeBuild/cmake/release/x86_64 --target clean"
+	],
+	"libraries" : 
+	{
+		"hello-jni-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "hello-jni",
+			"buildCommand" : "/opt/android-sdk-linux/cmake/3.6/bin/cmake --build /home/pacien/code/android-ndk/hello-jni/app/externalNativeBuild/cmake/release/x86_64 --target hello-jni",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : " -Dhello_jni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC        ",
+					"src" : "/home/pacien/code/android-ndk/hello-jni/app/src/main/cpp/hello-jni.c",
+					"workingDirectory" : "/home/pacien/code/android-ndk/hello-jni/app/externalNativeBuild/cmake/release/x86_64"
+				}
+			],
+			"output" : "/home/pacien/code/android-ndk/hello-jni/app/build/intermediates/cmake/release/obj/x86_64/libhello-jni.so",
+			"toolchain" : "10231614914744979507"
+		}
+	},
+	"toolchains" : 
+	{
+		"10231614914744979507" : 
+		{
+			"cCompilerExecutable" : "/opt/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/opt/android-sdk-linux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
